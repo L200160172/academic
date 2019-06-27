@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SI Albi Academic</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="material-icons-0.3.1/css/material-icons.min.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler sideMenuToggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand" href="#">&nbsp;<img src="img/logo.png" alt="SI Albi" style="width: 40px;"> SI Albi Academic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link pad" href="#">Log out</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Kiddo</a>
+                </li>
+                <!--li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something Else Here</a>
+                    </div>
+                </li-->
+                
+            </ul>
+            
+        </div>
+    </nav>
+    
+    <div class="wrapper d-flex">
+        <div class="sideMenu bg-mattBlackLight">
+            <div class="sidebar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-dashboard"></i><span class="text"> Dashboard</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-user"></i><span class="text"> User Profile</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-edit"></i><span class="text"> Input Nilai</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-plus"></i><span class="text"> Absensi</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-2" href="#" id="navbadrop" data-toggle="dropdown">
+                             <i class="fa fa-font"></i><span class="text"> Daftar</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="siswaList.html">Siswa</a>
+                            <a class="dropdown-item" href="guruList.html">Guru</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-bar-chart-o"></i><span class="text"> Presensi</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-calendar"></i><span class="text"> Tahun Ajar</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-2" href="#" id="navbadrop" data-toggle="dropdown">
+                             <i class="fa fa-file"></i><span class="text"> Leger</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Pengetahuan</a>
+                            <a class="dropdown-item" href="#">Keterampilan</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#"><i class="fa fa-gear"></i><span class="text"> Settings</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 sideMenuToggler" href="#"><i class="fa fa-align-justify"></i><span class="text"> Resize</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <main>
+                <div class="container-fluid">
+                    <div class="row padleft">
+                        <div class="col-md-4 my-3">
+                            <h2>Daftar Murid</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="row padleft">
+                        <div class="col-md-12 my-3">
+                            <div class="table-responsive-md">
+                                
+                                <div class="text-right">
+                                    <a class="btn btn-primary" href="siswaCreate.html">Tambah</a>
+                                </div>
+                                <br>
+                                <table class="table table-hover">
+                                    <thead class="thead-dark">
+                                        <th>#</th>
+                                        <th>NISN</th>
+                                        <th>Nama</th>
+                                        <th class="taction">Aksi</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1120</td>
+                                            <td>Ilyasa Sasabilla Oktora</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1121</td>
+                                            <td>Putera Islamiyadi Rahmatullah</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1123</td>
+                                            <td>Dhimas Permata Risqo Elangputra</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1120</td>
+                                            <td>Ilyasa Sasabilla Oktora</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1121</td>
+                                            <td>Putera Islamiyadi Rahmatullah</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1123</td>
+                                            <td>Dhimas Permata Risqo Elangputra</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1120</td>
+                                            <td>Ilyasa Sasabilla Oktora</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1121</td>
+                                            <td>Putera Islamiyadi Rahmatullah</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1123</td>
+                                            <td>Dhimas Permata Risqo Elangputra</td>
+                                            <td><button class="btn btn-danger btn-sm" value="Hapus"><span class="fa fa-trash-o"></span> Hapus</button>
+                                            <button class="btn btn-success btn-sm" value="Edit"><span class="fa fa-edit"></span> Edit</button></td>
+                                        </tr>   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="morris/chart-data-morris.js"></script>
+    <script src="tablesorter/jquery.tablesorter.js"></script>
+    <script src="tablesorter/tables.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

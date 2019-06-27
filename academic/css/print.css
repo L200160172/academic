@@ -1,0 +1,54 @@
+.text-center{
+    text-align-last: center;
+}
+
+.nilai tbody .text-left{
+    text-align-last: left;
+}
+
+.sikap thead{
+    text-align-last: center;
+}
+
+.sikap tbody td{
+    height: 40px;
+    vertical-align: top;
+}
+
+.head th{
+    text-align: center;
+}
+
+.nilai tbody td{
+    height: 65px;
+    text-align-last: center;
+    vertical-align: top;
+}
+
+.ekstra{
+    text-align-last: center;
+}
+
+.ekstra tbody .text-left{
+    text-align-last: left;
+}
+
+.hadir tbody td{
+    padding-left: 15px;
+}
+
+.hadir thead{
+    text-align-last: center;
+}
+
+.hadir tbody .tengah{
+    text-align-last: center;
+}
+
+.keterampilan tbody td {
+    height: 45px;
+}
+
+.wrapper{
+    margin: 68px;
+}
